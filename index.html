@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="form-container" class="container mt-4">
+        <h1>CONTACTOS</h1>
+
+
+<!--      tabla para mostrar todos los contactos -->
+
+<div class="container">
+    <h1 class="mt-4">Lista de Contactos</h1>
+    <table class="table table-striped mt-4">
+        <thead class="thead-dark">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Mail</th>
+            <th>Provincia</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="body-tabla-contactos">
+<!--         aca es donde se agregan los contactos -->
+    </tbody>
+</table>
+
+<!--     Formulario para crear un nuevo contacto -->
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h3>Crear Contacto</h3>
+        </div>
+        <div class="card-body">
+            <form id="form-crear-contactos">
+                <div class="form-group">
+                    <label for="nuevo-nombre">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" id="nuevo-nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nuevo-apellido">Apellido:</label>
+                    <input type="text" class="form-control" name="apellido" id="nuevo-apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nuevo-mail">Mail:</label>
+                    <input type="email" class="form-control" name="mail" id="nuevo-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nuevo-provincia">Provincia:</label>
+                    <select class="form-control" name="provincia" id="nuevo-provincia" required>
+                        <!-- Opciones de provincias aquí -->
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary mt-3">CREAR CONTACTO</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</div></body>
+</html>
